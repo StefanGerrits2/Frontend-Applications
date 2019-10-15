@@ -7,7 +7,7 @@
 ### 1. Clone this repository to your computer
 Run this command in your terminal:
 
-`git clone https://github.com/StefanGerrits2/datingwebsite-bloktech`
+`git clone https://github.com/StefanGerrits2/Frontend-Applications`
 ### 2. Navigate into the root of the folder
 Run this command in your terminal:
 
