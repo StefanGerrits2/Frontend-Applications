@@ -1,7 +1,13 @@
 <script>
 	export let name;
-	const el = document.querySelector('p');
-	const url ='https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-03/sparql';
+
+	import { onMount } from 'svelte'
+	let title = []
+	let cultureLabel = []
+
+	onMount(() => {
+		
+		const url ='https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-03/sparql';
 	//Note that the query is wrapped in es6 template strings to allow for easy copy pasting
 	const query = `
 	PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -47,20 +53,21 @@
 		.then(res => el.innerText = 'Status of API: ' + res.status);
 	// Call the url with the query attached, output data
 	fetch(url+'?query='+ encodeURIComponent(query) +'&format=json')
-		.then(res => res.json())
+		.then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link 
 		.then(json => {
 		console.log(json);
 		console.table(json.results);
-		el.textContent = JSON.stringify(json.results);
+		title = json.results.bindings[0].title.value
+		cultureLabel = json.results.bindings[0].cultureLabel.value
 		});
-	}
+	} //de JSON sla je op een een var bijvoorbeeld, dan loop je hierovereen (for each budda in buddas)
+	}) //component maken voor img die een link bevat, dan voor elk object in array 
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
+	
 </style>
 
-<h1>Hello {name}!</h1>
-<p>{ runQuery() }</p>
+<p>Data:</p>
+<p>{title}</p>
+<p>{cultureLabel}</p>
