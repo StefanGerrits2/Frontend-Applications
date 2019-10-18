@@ -45,7 +45,18 @@ Open your browser and go to:
 
 You can change the port on the second code line in the server.js file. When you change this port, make sure it matches with the port after localhost:
 
-## Database
+## API
+
+The data I use is provided by an API. The API contains 700.000 objects. I wrote queries to get the objects that I want. 
+
+I collect all toys which contains the following data that I want:
+
+* Title
+* Type
+* Image
+* Location
+* Description
+* Culture
 
 ## License
 
