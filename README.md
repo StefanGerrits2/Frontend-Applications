@@ -1,6 +1,22 @@
-# Data visualisation
+# The past of toys
 
 ## Description
+
+![image](https://user-images.githubusercontent.com/45566396/67085227-bbd5f980-f19e-11e9-90d9-f1f35716f07d.png)
+
+This is an app to visualize data for NMVW wereldculturen. The data I chose to visualize is all the data about toys. They will be able to see which toys they had in the past and how they looked. They will be asked which toys they have right now so they can compare them with the past. On the specific toy page, they can see relates toys which are made of the same material. They will be able to see:
+
+* The image
+* The title
+* Where it came from
+* Material
+
+Optional:
+
+* A description
+* The date
+ * A term for a period
+ * The date in numbers
 
 ## Installation
 

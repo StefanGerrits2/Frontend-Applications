@@ -2,7 +2,7 @@
 	export let name;
 
 	import { onMount } from 'svelte'
-	let title = []
+	let data = []
 	let cultureLabel = []
 
 	onMount(() => {
@@ -57,17 +57,26 @@
 		.then(json => {
 		console.log(json);
 		console.table(json.results);
-		title = json.results.bindings[0].title.value
-		cultureLabel = json.results.bindings[0].cultureLabel.value
+		data = json.results.bindings
 		});
 	} //de JSON sla je op een een var bijvoorbeeld, dan loop je hierovereen (for each budda in buddas)
 	}) //component maken voor img die een link bevat, dan voor elk object in array 
 </script>
 
 <style>
-	
+	div {
+		border: 1px solid black;
+		padding: 1em;
+	}
+	img {
+		width: 1em;
+	}
 </style>
 
-<p>Data:</p>
-<p>{title}</p>
-<p>{cultureLabel}</p>
+{#each data as result}
+	<div>
+		<h3>Titel: {result.title.value}</h3>
+		<p>Foto: <img src="{result.img.value}" alt=""></p>
+		<p>Cultuur: {result.cultureLabel.value}</p>
+	</div>
+{/each}
