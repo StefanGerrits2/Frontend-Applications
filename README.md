@@ -32,3 +32,5 @@ You can change the port on the second code line in the server.js file. When you 
 ## Database
 
 ## License
+
+[MIT](https://github.com/StefanGerrits2/Frontend-Applications/blob/master/LICENSE.txt) © Stefan Gerrits
