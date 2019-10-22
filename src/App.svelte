@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
-	import Test from './Test.svelte';
+	import Test from './shared/Test.svelte';
+
 	let data = []
 
 	onMount(() => {
@@ -68,7 +69,7 @@
 {#each data as result}
 	<Test 
 		title={result.title.value}
-		image={result.img.value}
 		culture={result.cultureLabel.value}
-	/>
+		image={result.img.value}>
+	</Test>
 {/each}
