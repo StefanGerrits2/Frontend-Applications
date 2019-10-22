@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Test from './shared/Test.svelte';
+	import NavMenu from './shared/NavMenu.svelte'
 
 	let data = []
 
@@ -65,6 +66,8 @@
 <style>
 
 </style>
+
+<NavMenu/>
 
 {#each data as result}
 	<Test 
