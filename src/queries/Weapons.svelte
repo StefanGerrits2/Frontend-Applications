@@ -27,7 +27,7 @@
 
         WHERE {
         ?obj edm:isRelatedTo <https://hdl.handle.net/20.500.11840/termmaster1832> .
-        ?obj edm:object <https://hdl.handle.net/20.500.11840/termmaster12664> .
+        ?obj edm:object <https://hdl.handle.net/20.500.11840/termmaster12653> .
         ?obj dc:title ?title .
         ?obj dc:type ?type .
         ?obj edm:isShownBy ?img .

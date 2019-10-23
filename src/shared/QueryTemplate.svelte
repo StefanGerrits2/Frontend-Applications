@@ -1,8 +1,6 @@
 <script>
-    export let title
-    export let image
-    export let culture
-    import Image from './Image.svelte'
+    export let title, image, culture, time, type, origin, size;
+    import Image from './Image.svelte';
 </script>
 
 <style>
@@ -23,4 +21,8 @@
         <Image image={image}/>
     </p>
     <p>Cultuur: {culture}</p>
+    <p>Tijd: {time}</p>
+    <p>Type: {type}</p>
+    <p>Herkomst: {origin}</p>
+    <p>Grootte: {size}</p>
 </div>

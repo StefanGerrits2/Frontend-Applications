@@ -10,39 +10,39 @@
 	//Note that the query is wrapped in es6 template strings to allow for easy copy pasting
 	const query = `
 		PREFIX dc: <http://purl.org/dc/elements/1.1/>
-	PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-	PREFIX dct: <http://purl.org/dc/terms/>
-	PREFIX edm: <http://www.europeana.eu/schemas/edm/>
-	PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-	PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-	SELECT 
-		?obj
-		?title
-		?type 
-		(SAMPLE(?img) as ?img) 
-		?herkomstLabel
-		?cultureLabel
-		?time
-		?size
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        PREFIX dct: <http://purl.org/dc/terms/>
+        PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        SELECT 
+            ?obj
+            ?title
+            ?type 
+            (SAMPLE(?img) as ?img) 
+            ?originLabel
+            ?cultureLabel
+            ?time
+            ?size
 
-	WHERE {
-	?obj edm:isRelatedTo <https://hdl.handle.net/20.500.11840/termmaster1832> .
-	?obj edm:object <https://hdl.handle.net/20.500.11840/termmaster12665> .
-	?obj dc:title ?title .
-	?obj dc:type ?type .
-	?obj edm:isShownBy ?img .
-	?obj dct:spatial ?herkomst .
-	?obj dct:extent ?size .
-	?herkomst skos:prefLabel ?herkomstLabel .
-	
-	OPTIONAL { ?obj dct:created ?time } .
-	OPTIONAL { ?obj dc:subject ?culture } .
-	OPTIONAL { ?culture skos:prefLabel ?cultureLabel } .
-	
-	FILTER langMatches(lang(?title), "ned")
-		
-	} LIMIT 100
-	`;
+        WHERE {
+        ?obj edm:isRelatedTo <https://hdl.handle.net/20.500.11840/termmaster1832> .
+        ?obj edm:object <https://hdl.handle.net/20.500.11840/termmaster13024> .
+        ?obj dc:title ?title .
+        ?obj dc:type ?type .
+        ?obj edm:isShownBy ?img .
+        ?obj dct:spatial ?origin .
+        ?obj dct:extent ?size .
+        ?origin skos:prefLabel ?originLabel .
+        
+        OPTIONAL { ?obj dct:created ?time } .
+        OPTIONAL { ?obj dc:subject ?culture } .
+        OPTIONAL { ?culture skos:prefLabel ?cultureLabel } .
+        
+        FILTER langMatches(lang(?title), "ned")
+            
+        } LIMIT 100
+        `;
 	runQuery(url, query);
 
 	function runQuery(url, query){
@@ -66,6 +66,10 @@
 	<QueryTemplate 
 		title={result.title.value}
 		culture={result.cultureLabel.value}
-		image={result.img.value}>
+		image={result.img.value}
+        time={result.time.value}
+        origin={result.originLabel.value}
+        size={result.size.value}
+        type={result.type.value}>
 	</QueryTemplate>
 {/each}
