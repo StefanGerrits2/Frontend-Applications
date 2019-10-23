@@ -3,7 +3,6 @@
     export let image
     export let culture
     import Image from './Image.svelte'
-    export let image_url
 </script>
 
 <style>
