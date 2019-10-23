@@ -52,7 +52,7 @@
 		.then(res => el.innerText = 'Status of API: ' + res.status);
 	// Call the url with the query attached, output data
 	fetch(url+'?query='+ encodeURIComponent(query) +'&format=json')
-		.then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link 
+		.then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link. 
 		.then(json => {
 		console.log(json);
 		console.table(json.results);
