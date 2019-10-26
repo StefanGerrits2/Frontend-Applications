@@ -1,20 +1,39 @@
 <script>
     import NavItem from './NavItem.svelte'
     import { Link } from "svelte-routing";
+    export let isDefault;
 </script>
 
 <style>
-	ul {
-  		list-style-type: none;
-	}
+    .default-nav-bar {
+        margin-bottom: 1em;
+    }
+	.default-nav-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .home-nav-bar {
+        display: grid;
+    }
+    .home-nav-bar ul {
+        display: flex;
+        width: 1em;
+        list-style-type: none;
+    }
+
 </style>
 
-<nav>
+<nav class={isDefault ? "default-nav-bar" : "home-nav-bar"}>
     <ul>
-        <Link to="/">Home</Link>
-        <Link to="/poppen">Poppen</Link>
-        <Link to="/wapens">Wapens</Link>
-        <Link to="/bordspellen">Bordspellen</Link>
-        <Link to="/autos">Auto's</Link>
+        {#if isDefault}
+            <li><Link class="test" to="/">Home</Link></li>
+        {/if}
+            <li><Link to="/poppen">Poppen</Link></li>
+            <li><Link to="/wapens">Speelgoedwapens</Link></li>
+            <li><Link to="/bordspellen">Bordspellen</Link></li>
+            <li><Link to="/autos">Speelgoedauto's</Link></li>
     </ul>
 </nav>

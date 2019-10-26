@@ -13,16 +13,17 @@ body {
 }
 
 a {
-	color: rgb(0,100,200);
+	color: white;
 	text-decoration: none;
+	padding: .5em 1em;
+	background-color: #f1f1f1;
+	color: #000;
+	margin: 0em;
 }
 
 a:hover {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: rgb(0,80,160);
+	background-color: #555;
+  	color: white;
 }
 
 label {

@@ -11,7 +11,8 @@
 </script>
 
 <Router url="{url}">
-	<NavMenu/>
+	<NavMenu isDefault/>
+	<p></p>
 
   	<div>
 		<Route path="/" component="{Home}" />
