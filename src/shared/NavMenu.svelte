@@ -7,14 +7,16 @@
 <style>
     .default-nav-bar {
         margin-bottom: 1em;
+        background-color: #f1f1f1;
     }
 	.default-nav-bar ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
+        margin-left: -1em;
     }
-    .default-nav-bar ul span {
+    .default-nav-bar ul p {
         color: white;
         text-decoration: none;
         padding: .5em 1em;
@@ -22,40 +24,43 @@
         color: #000;
         margin: 0em;
     }
-    .default-nav-bar ul span:hover {
+    .default-nav-bar ul p:hover {
         color: #f1f1f1;
         background-color: #555;
     }
-
-    .home-nav-bar ul {
+    .tile-nav__container {
         display: flex;
-        list-style-type: none;
         flex-wrap: wrap;
-        flex-direction: row;
+        width: 60%;
+        list-style-type: none;
+        margin-left: -2.5em;
     }
-    .home-nav-bar ul span {
-        color: white;
-        text-decoration: none;
-        padding: .5em 1em;
+    .tile-nav__container li {
+        width: 20em;
+        height: 20em;
         background-color: rgb(59, 41, 106);
         color: white;
-        margin: 0em;
+        margin-right: 2em;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .tile-nav__container li p {
+        padding-top: 2em;
     }
 
-    .home-nav-bar ul span:hover {
+    .tile-nav-bar li:hover {
         background-color: rgb(128, 106, 255);
     }
-
 </style>
 
-<nav class={isDefault ? "default-nav-bar" : "home-nav-bar"}>
-    <ul>
+<nav class={isDefault ? "default-nav-bar" : "tile-nav-bar"}>
+    <ul class={isDefault ? "default-nav__container" : "tile-nav__container"}>
         {#if isDefault}
-            <li><Link class="test" to="/"><span>Home</span></Link></li>
+            <Link class="test" to="/"><li><p>Home</p></li></Link>
         {/if}
-            <li><Link to="/poppen"><span>Poppen</span></Link></li>
-            <li><Link to="/wapens"><span>Speelgoedwapens</span></Link></li>
-            <li><Link to="/bordspellen"><span>Bordspellen</span></Link></li>
-            <li><Link to="/autos"><span>Speelgoedauto</span></Link></li>
+            <Link to="/poppen"><li><p>Poppen</p></li></Link>
+            <Link to="/wapens"><li><p>Speelgoedwapens</p></li></Link>
+            <Link to="/bordspellen"><li><p>Bordspellen</p></li></Link>
+            <Link to="/autos"><li><p>Speelgoedauto's</p></li></Link>
     </ul>
 </nav>
