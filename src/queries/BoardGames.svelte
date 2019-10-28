@@ -5,8 +5,7 @@
 	let data = []
 
 	onMount(() => {
-		const url ='https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-03/sparql';
-		let el = document.querySelector('p')
+	const url ='https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-03/sparql';
 	//Note that the query is wrapped in es6 template strings to allow for easy copy pasting
 	const query = `
 		PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -46,11 +45,6 @@
 	runQuery(url, query);
 
 	function runQuery(url, query){
-	//Test if the endpoint is up and print result to page 
-	// (you can improve this script by making the next part of this function wait for a succesful result)
-	fetch(url)
-		.then(res => el.innerText = 'Status of API: ' + res.status);
-	// Call the url with the query attached, output data
 	fetch(url+'?query='+ encodeURIComponent(query) +'&format=json')
 		.then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link. 
 		.then(json => {

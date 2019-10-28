@@ -5,7 +5,7 @@
 
 <style>
 	div {
-		border: 1px solid black;
+		border-bottom: 1px solid black;
         padding: 1em;
 	}
     
