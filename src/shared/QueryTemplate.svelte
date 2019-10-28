@@ -5,19 +5,19 @@
 
 <style>
 	div {
-		border: 1px solid black;
+		border-bottom: 1px solid black;
         padding: 1em;
 	}
     
-    .test {
+    .template-image {
         display: flex;
         align-items: center;
     }
 </style>
 
 <div>
-    <h3>Titel: {title}</h3>
-    <p class="test">Foto:
+    <h3>{title}</h3>
+    <p class="template-image">
         <Image image={image}/>
     </p>
     <p>Cultuur: {culture}</p>

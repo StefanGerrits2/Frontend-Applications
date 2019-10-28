@@ -6,8 +6,10 @@
 
 	onMount(() => {
 		const url ='https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-03/sparql';
-		let el = document.querySelector('p')
+        let el = document.querySelector('p');
+        let sparqLimit = 25;
 	//Note that the query is wrapped in es6 template strings to allow for easy copy pasting
+        
 	const query = `
 		PREFIX dc: <http://purl.org/dc/elements/1.1/>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -41,7 +43,7 @@
         
         FILTER langMatches(lang(?title), "ned")
             
-        } LIMIT 100
+        } LIMIT ${sparqLimit}
         `;
 	runQuery(url, query);
 

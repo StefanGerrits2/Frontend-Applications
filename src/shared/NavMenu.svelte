@@ -18,8 +18,9 @@
     .home-nav-bar {
         display: grid;
     }
-    .home-nav-bar ul {
-        display: flex;
+    .home-nav-bar ul li {
+        display: grid;
+        grid-column-end: 3;
         width: 1em;
         list-style-type: none;
     }

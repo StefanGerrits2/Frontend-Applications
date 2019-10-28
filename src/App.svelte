@@ -8,17 +8,19 @@
 	import Home from './shared/Home.svelte'
 	import { Router, Route } from "svelte-routing";
 	export let url = "";
+	import Test from '../src/shared/Test.svelte'
+	export let message;
+	export let answers;
+	export let results;
 </script>
 
-<Router url="{url}">
-	<NavMenu isDefault/>
-	<p></p>
-
-  	<div>
-		<Route path="/" component="{Home}" />
-		<Route path="/poppen" component="{Dolls}" />
-		<Route path="/wapens" component="{Weapons}" />
-		<Route path="/bordspellen" component="{BoardGames}"/>
-		<Route path="/autos" component="{Cars}"/>
-  	</div>
-</Router>
+<div id="app">
+	{ message }
+	<ul>
+		{#each results as result}
+		<li>
+			<a href="/{result.title}">ID: {result.title}</a>,
+		</li>
+		{/each}
+	</ul>
+</div>
