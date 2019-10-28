@@ -19,7 +19,7 @@
 	<ul>
 		{#each results as result}
 		<li>
-			<a href="/{result.title}">ID: {result.title}</a>,
+			<a href="/{result.title}">Titel: {result.title}</a>
 		</li>
 		{/each}
 	</ul>
