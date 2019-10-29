@@ -1,7 +1,7 @@
 <script>
-    import NavItem from './NavItem.svelte'
-    import { Link } from "svelte-routing";
-    export let isDefault;
+    import { Link } from "svelte-routing"
+    import Image from './Image.svelte'
+    export let isDefault
 </script>
 
 <style>
@@ -51,6 +51,11 @@
     .tile-nav-bar li:hover {
         background-color: rgb(128, 106, 255);
     }
+
+    img {
+        width: 2em;
+        height: 2em;
+    }
 </style>
 
 <nav class={isDefault ? "default-nav-bar" : "tile-nav-bar"}>
@@ -64,3 +69,5 @@
             <Link to="/autos"><li><p>Speelgoedauto's</p></li></Link>
     </ul>
 </nav>
+
+<img src="../images/test.jpeg" alt="a">
