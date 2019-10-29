@@ -31,13 +31,12 @@
     .tile-nav__container {
         display: flex;
         flex-wrap: wrap;
-        width: 60%;
         list-style-type: none;
         margin-left: -2.5em;
     }
     .tile-nav__container li {
-        width: 20em;
-        height: 20em;
+        min-width: 10em;
+        min-height: 10em;
         background-color: rgb(59, 41, 106);
         color: white;
         margin-right: 2em;

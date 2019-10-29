@@ -6,8 +6,10 @@
 	import Weapons from './queries/Weapons.svelte'
 	import BoardGames from './queries/BoardGames.svelte'
 	import Home from './shared/Home.svelte'
-	import { Router, Route } from "svelte-routing";
-	export let url = "";
+	import { Router, Route } from "svelte-routing"
+	import DetailPage from './shared/DetailPage.svelte'
+	export let title
+	export let url = ""
 </script>
 
 <Router url="{url}">
@@ -20,5 +22,6 @@
 		<Route path="/wapens" component="{Weapons}" />
 		<Route path="/bordspellen" component="{BoardGames}"/>
 		<Route path="/autos" component="{Cars}"/>
+		<Route path="/${title}" component="{DetailPage}"/>
   	</div>
 </Router>

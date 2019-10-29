@@ -65,6 +65,7 @@
         time={result.time.value}
         origin={result.originLabel.value}
         size={result.size.value}
-        type={result.type.value}>
+        type={result.type.value}
+        uri={result.obj.value}>
 	</QueryTemplate>
 {/each}
