@@ -41,8 +41,8 @@
         background-color: rgb(59, 41, 106);
         color: white;
         margin-right: 2em;
-        border-radius: 5px;
         text-align: center;
+        border-radius: 15px;
     }
     .tile-nav__container li p {
         padding-top: 2em;
@@ -51,10 +51,11 @@
     .tile-nav-bar li:hover {
         background-color: rgb(128, 106, 255);
     }
-
-    img {
-        width: 2em;
-        height: 2em;
+    .test {
+        width: 14em;
+        height: 14em;
+        border-radius: 15px;
+        
     }
 </style>
 
@@ -62,12 +63,15 @@
     <ul class={isDefault ? "default-nav__container" : "tile-nav__container"}>
         {#if isDefault}
             <Link class="test" to="/"><li><p>Home</p></li></Link>
-        {/if}
             <Link to="/poppen"><li><p>Poppen</p></li></Link>
             <Link to="/wapens"><li><p>Speelgoedwapens</p></li></Link>
             <Link to="/bordspellen"><li><p>Bordspellen</p></li></Link>
             <Link to="/autos"><li><p>Speelgoedauto's</p></li></Link>
+        {:else}
+            <Link to="/poppen"><li><p>Poppen</p><img class="test" src="/images/dolls.png" alt=""></li></Link>
+            <Link to="/wapens"><li><p>Speelgoedwapens</p><img class="test" src="/images/weapons.png" alt=""></li></Link>
+            <Link to="/bordspellen"><li><p>Bordspellen</p><img class="test" src="/images/boardgames.png" alt=""></li></Link>
+            <Link to="/autos"><li><p>Speelgoedauto's</p><img class="test" src="/images/cars.png" alt=""></li></Link>
+        {/if}
     </ul>
 </nav>
-
-<img src="../images/test.jpeg" alt="a">

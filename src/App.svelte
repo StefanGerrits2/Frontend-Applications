@@ -12,8 +12,6 @@
 
 <Router url="{url}">
 	<NavMenu isDefault/>
-	<p></p>
-
   	<div>
 		<Route path="/" component="{Home}" />
 		<Route path="/poppen" component="{Dolls}" />
