@@ -40,7 +40,7 @@
 		
 		FILTER langMatches(lang(?title), "ned")
 			
-		} LIMIT 100
+		} LIMIT 1000
 		`;
 	runQuery(url, query);
 
@@ -57,14 +57,27 @@
 	}) //component maken voor img die een link bevat, dan voor elk object in array 
 </script>
 
-{#each results as result}
-	<QueryTemplate 
-		title={result.title.value}
-		culture={result.cultureLabel.value}
-		image={result.img.value}
-        time={result.time.value}
-        origin={result.originLabel.value}
-        size={result.size.value}
-        type={result.type.value}>
-	</QueryTemplate>
-{/each}
+<style>
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<h1>Poppen</h1>
+<ul class="cards">
+	{#each results as result}
+		<QueryTemplate 
+			title={result.title.value}
+			culture={result.cultureLabel.value}
+			image={result.img.value}
+			time={result.time.value}
+			origin={result.originLabel.value}
+			size={result.size.value}
+			type={result.type.value}>
+		</QueryTemplate>
+	{/each}
+</ul>

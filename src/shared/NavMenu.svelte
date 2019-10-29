@@ -1,13 +1,12 @@
 <script>
     import { Link } from "svelte-routing"
-    import Image from './Image.svelte'
     export let isDefault
 </script>
 
 <style>
     .default-nav-bar {
         margin-bottom: 1em;
-        background-color: #f1f1f1;
+        background-color: #d1d1d1;
     }
 	.default-nav-bar ul {
         list-style-type: none;
@@ -20,7 +19,7 @@
         color: white;
         text-decoration: none;
         padding: .5em 1em;
-        background-color: #f1f1f1;
+        background-color: #d1d1d1;
         color: #000;
         margin: 0em;
     }
