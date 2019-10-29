@@ -96,4 +96,4 @@
             <button class="btn">Lees meer!</button>
         </div>
     </div>
-</li>
+</li> 
