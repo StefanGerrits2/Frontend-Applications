@@ -50,7 +50,7 @@
 		.then(json => {
 		console.log(json);
 		console.table(json.results);
-		results = json.results.bindings
+        results = json.results.bindings
 		});
 	} //de JSON sla je op een een var bijvoorbeeld, dan loop je hierovereen (for each budda in buddas)
 	}) //component maken voor img die een link bevat, dan voor elk object in array 
@@ -64,6 +64,7 @@
         time={result.time.value}
         origin={result.originLabel.value}
         size={result.size.value}
-        type={result.type.value}>
+        type={result.type.value}
+        uri={result.obj.value}>
 	</QueryTemplate>
 {/each}
