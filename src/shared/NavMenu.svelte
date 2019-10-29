@@ -38,24 +38,34 @@
     .tile-nav__container li {
         width: 20em;
         height: 20em;
-        background-color: rgb(59, 41, 106);
+        background-color: #002447;
         color: white;
         margin-right: 2em;
         text-align: center;
         border-radius: 15px;
     }
-    .tile-nav__container li p {
-        padding-top: 2em;
+    .tile-nav__container li h1 {
+        padding-top: 1em;
     }
 
     .tile-nav-bar li:hover {
         background-color: rgb(128, 106, 255);
     }
-    .test {
-        width: 14em;
-        height: 14em;
-        border-radius: 15px;
-        
+    .cars-img {
+        width: 65%;
+        margin-top: 2em;
+    }
+    .doll-img {
+        width: 40%;
+        margin-top: 1em;
+    }
+    .weapon-img {
+        width: 55%;
+        margin-top: 1.5em;
+    }
+    .board-game-img {
+        width: 55%;
+        margin-top: 1em;
     }
 </style>
 
@@ -68,10 +78,10 @@
             <Link to="/bordspellen"><li><p>Bordspellen</p></li></Link>
             <Link to="/autos"><li><p>Speelgoedauto's</p></li></Link>
         {:else}
-            <Link to="/poppen"><li><p>Poppen</p><img class="test" src="/images/dolls.png" alt=""></li></Link>
-            <Link to="/wapens"><li><p>Speelgoedwapens</p><img class="test" src="/images/weapons.png" alt=""></li></Link>
-            <Link to="/bordspellen"><li><p>Bordspellen</p><img class="test" src="/images/boardgames.png" alt=""></li></Link>
-            <Link to="/autos"><li><p>Speelgoedauto's</p><img class="test" src="/images/cars.png" alt=""></li></Link>
+            <Link to="/poppen"><li><h1>Poppen</h1><img class="doll-img" src="/images/doll.png" alt=""></li></Link>
+            <Link to="/wapens"><li><h1>Speelgoedwapens</h1><img class="weapon-img" src="/images/weapon.png" alt=""></li></Link>
+            <Link to="/bordspellen"><li><h1>Bordspellen</h1><img class="board-game-img" src="/images/board-game.png" alt=""></li></Link>
+            <Link to="/autos"><li><h1>Speelgoedauto's</h1><img class="cars-img" src="/images/car.svg" alt=""></li></Link>
         {/if}
     </ul>
 </nav>
