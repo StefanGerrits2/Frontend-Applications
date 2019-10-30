@@ -39,7 +39,7 @@
         
         FILTER langMatches(lang(?title), "ned")
             
-        } LIMIT 10
+        } LIMIT 20
         `;
 	runQuery(url, query);
 
@@ -66,7 +66,7 @@
     }
 </style>
 
-<h1>Speelgoedwapens</h1>
+<h2>Zo zagen speelgoedwapens er vroeger uit</h2>
 <ul class="cards">
     {#each results as result}
         <QueryTemplate 

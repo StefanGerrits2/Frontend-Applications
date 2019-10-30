@@ -20,6 +20,9 @@
         color: darkgrey;
         padding: 0.5rem;
     }
+    .btn:hover {
+        cursor: pointer;
+    }
     .cards__item {
         display: flex;
         padding: 1rem;
@@ -37,7 +40,7 @@
     }
     .card {
         background-color: white;
-        border-radius: 0.25rem;
+        border-radius: 0.4em;
         box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
         display: flex;
         flex-direction: column;
@@ -60,9 +63,9 @@
         overflow: hidden;
         position: relative;
         transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
-        max-height: 14em;
+        height: 15em;
         width: auto;
-        object-fit: cover;
+        object-fit: scale-down;
     }
     .card__image::before {
         content: "";
@@ -75,6 +78,7 @@
         font-weight: 300;
         letter-spacing: 2px;
         text-transform: uppercase;
+        margin-top: -1em;
     }
     .card__text {
         flex: 1 1 auto;
