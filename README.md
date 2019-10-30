@@ -56,6 +56,10 @@ I collect all toys which contains the following data that I want:
 * Description
 * Culture
 
+### 6. Check it out!
+
+[Click here](https://frontend-applications-toys.netlify.com/) to check out my application!
+
 ## License
 
 [MIT](https://github.com/StefanGerrits2/Frontend-Applications/blob/master/LICENSE.txt) © Stefan Gerrits
