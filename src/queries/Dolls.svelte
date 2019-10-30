@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
 	import QueryTemplate from '../shared/QueryTemplate.svelte';
-
 	let results = []
 
 	onMount(() => {
@@ -40,7 +39,7 @@
 		
 		FILTER langMatches(lang(?title), "ned")
 			
-		} LIMIT 1000
+		} LIMIT 10
 		`;
 	runQuery(url, query);
 

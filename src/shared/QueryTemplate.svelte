@@ -60,8 +60,9 @@
         overflow: hidden;
         position: relative;
         transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
-        max-height: 10em;
+        max-height: 14em;
         width: auto;
+        object-fit: cover;
     }
     .card__image::before {
         content: "";

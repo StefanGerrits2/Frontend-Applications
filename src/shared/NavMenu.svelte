@@ -30,9 +30,10 @@
     .tile-nav__container {
         display: flex;
         flex-wrap: wrap;
-        width: 60%;
+        width: 100%;
+        height: 100%;
         list-style-type: none;
-        margin-left: -2.5em;
+        margin: 0em auto;
     }
     .tile-nav__container li {
         width: 20em;
@@ -48,7 +49,7 @@
     }
 
     .tile-nav-bar li:hover {
-        background-color: rgb(128, 106, 255);
+        background-color: rgb(29, 10, 140);
     }
     .cars-img {
         width: 65%;
@@ -71,7 +72,7 @@
 <nav class={isDefault ? "default-nav-bar" : "tile-nav-bar"}>
     <ul class={isDefault ? "default-nav__container" : "tile-nav__container"}>
         {#if isDefault}
-            <Link class="test" to="/"><li><p>Home</p></li></Link>
+            <Link to="/"><li><p>Home</p></li></Link>
             <Link to="/poppen"><li><p>Poppen</p></li></Link>
             <Link to="/wapens"><li><p>Speelgoedwapens</p></li></Link>
             <Link to="/bordspellen"><li><p>Bordspellen</p></li></Link>
