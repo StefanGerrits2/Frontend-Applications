@@ -27,6 +27,14 @@
         color: #f1f1f1;
         background-color: #555;
     }
+    @media(max-width: 37rem) {
+        .default-nav-bar ul {
+            display: block;
+        }
+        .default-nav-bar ul * {
+            border-bottom: 1px solid #d1d1d1;
+        }
+    }
     .tile-nav__container {
         display: flex;
         flex-wrap: wrap;
