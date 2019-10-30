@@ -81,7 +81,7 @@
             <Link to="/poppen"><li><h1>Poppen</h1><img class="doll-img" src="/images/doll.png" alt=""></li></Link>
             <Link to="/wapens"><li><h1>Speelgoedwapens</h1><img class="weapon-img" src="/images/weapon.png" alt=""></li></Link>
             <Link to="/bordspellen"><li><h1>Bordspellen</h1><img class="board-game-img" src="/images/board-game.png" alt=""></li></Link>
-            <Link to="/autos"><li><h1>Speelgoedauto's</h1><img class="cars-img" src="/images/car.svg" alt=""></li></Link>
+            <Link to="/autos"><li><h1>Speelgoedauto's</h1><img class="cars-img" src="/images/car.png" alt=""></li></Link>
         {/if}
     </ul>
 </nav>
