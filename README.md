@@ -35,15 +35,13 @@ Run this command in your terminal:
 ### 4. Run the server
 Run this command in your terminal:
 
-`npm run start`
+`npm run dev`
 NOTE: Make sure you are still located in the root of the `Frontend Applications` folder when running this command.
 
 ### 5. Viewing the website
 Open your browser and go to:
 
-`localhost:....`
-
-You can change the port on the second code line in the server.js file. When you change this port, make sure it matches with the port after localhost:
+`localhost:5000`
 
 ## API
 
