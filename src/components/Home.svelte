@@ -1,11 +1,12 @@
 <script>
     import NavMenu from './NavMenu.svelte'
+    import PageTitle from '../components/PageTitle.svelte'
 </script>
 
 <style>
 
 </style>
 
-<h1>Wat voor speelgoed heb jij thuis?</h1>
+<PageTitle title="Wat voor speelgoed heb jij thuis?"/>
 
-<NavMenu !isDefault/>
+<NavMenu isDefault={false}/>

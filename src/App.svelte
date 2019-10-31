@@ -11,7 +11,7 @@
 </script>
 
 <Router url="{url}">
-	<NavMenu isDefault/>
+	<NavMenu isDefault={true}/>
   	<div>
 		<Route path="/" component="{Home}" />
 		<Route path="/poppen" component="{Dolls}" />

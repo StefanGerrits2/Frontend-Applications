@@ -3,10 +3,10 @@
 </script>
 
 <style>
-    h2 {
+    h3 {
         color: #444444;
         margin-left: .5em;
     }
 </style>
 
-<h2>{title}</h2>
+<h3>{title}</h3>
