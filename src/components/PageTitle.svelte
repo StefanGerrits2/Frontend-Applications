@@ -1,12 +1,17 @@
 <script>
     export let title;
+    export let isDetailPage;
 </script>
 
 <style>
-    h2 {
-        color: #444444;
-        margin-left: .5em;
+    .home-page-title {
+        color: #002447;
+        margin-left: 1.5em;
+    }
+    .toy-page-title {
+        color: #002447;
+        margin-left: .55em;
     }
 </style>
 
-<h2>{title}</h2>
+<h2 class={isDetailPage ? "toy-page-title" : "home-page-title"}>{title}</h2>

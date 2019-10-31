@@ -1,21 +1,22 @@
 <script>
 	import { onMount } from 'svelte';
 	import QueryTemplate from '../components/QueryTemplate.svelte';
-    let results = [];
     import { url, query } from '../queries/GetBoardgames.svelte';
     import PageTitle from './PageTitle.svelte';
+    let results = []; // Create array to put in data later
 
+    // Source I used for the next code: https://github.com/cmda-tt/course-19-20/blob/master/examples/sparql/baseScript.js
 	onMount(() => {
         runQuery(url, query);
         function runQuery(url, query){
-        fetch(url+'?query='+ encodeURIComponent(query) +'&format=json')
-            .then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link. 
+            fetch(url+'?query='+ encodeURIComponent(query) +'&format=json') // Get data from API with my query
+            .then(res => res.json()) // Data is being send back as JSON 
             .then(json => {
-                results = json.results.bindings
-                console.log(results)
+                results = json.results.bindings; // Save all objects in results
             });
         } 
-	}) 
+    }) 
+    // Source ends here
 </script>
 
 <style>
@@ -28,7 +29,7 @@
     }
 </style>
 
-<PageTitle title="Zo zagen bordspellen er vroeger uit"/>
+<PageTitle isDetailPage={true} title="Zo zagen bordspellen er vroeger uit"/>
 <ul class="cards">
     {#each results as result}
         <QueryTemplate 
