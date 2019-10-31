@@ -106,7 +106,7 @@
             <div class="card__title"><h3>{title}</h3></div>
             <div class="card__text">
                 <p>Cultuur: {culture}</p>
-                <p>Tijd: {time}</p>
+                <p>Jaar: {time}</p>
                 <p>Type: {type}</p>
                 <p>Herkomst: {origin}</p>
                 <p>Grootte: {size}</p>
