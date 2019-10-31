@@ -12,6 +12,8 @@ This is a web application I made for a school project to visualize data for NMVW
 
 I made this application for children. This way they can compare the toys from the past with the toys they have right now. This will teach them a lot about history in a fun way. They can learn about which materials they used to make toys, which culture it's part of and how toys developed over time in general.
 
+[Click here](https://github.com/StefanGerrits2/Frontend-Applications/wiki/1.3-Het-concept) to check out my concept in detail.
+
 ## Features
 
 * Selecting a toy category
@@ -47,7 +49,7 @@ Open your browser and go to:
 
 ## API
 
-The data I use is provided by an API. The API contains 700.000 objects. I have written SPARQL queries to get the objects that I want. 
+The data I use is provided by [this API](https://data.netwerkdigitaalerfgoed.nl/). The API contains 700.000 objects. I have written SPARQL queries to get the objects that I want. 
 
 I collect all toys from specific categories:
 
@@ -67,7 +69,7 @@ These categories contain the following data that I get from the API:
 * Material
 
 <details>
-<summary>Click here to see a query I have written in SPARQL to get all dolls from the API</summary>
+<summary>Click here to see a quick example of a query I have written in SPARQL to get all dolls from the API</summary>
 <br>
 
     PREFIX dc: <http://purl.org/dc/elements/1.1/> 
@@ -108,12 +110,15 @@ These categories contain the following data that I get from the API:
     } LIMIT 20
 
 </details>
+###### Further explanation
+[Click here](https://github.com/StefanGerrits2/Frontend-Applications/wiki/2.3-Queries-voor-SPARQL) for further explanation.
 
 ## Sources
 
 * [Svelte](https://svelte.dev/) - Documentation about Svelte.
 * [baseScript](https://github.com/cmda-tt/course-19-20/blob/master/examples/sparql/baseScript.js) - To fetch data from API.
 * [Freefrontend](https://freefrontend.com/) - To get ideas for my styling.
+* [API](https://data.netwerkdigitaalerfgoed.nl/) - To get all the data I needed.
 
 ## Credits
 
