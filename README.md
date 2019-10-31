@@ -53,7 +53,7 @@ I collect all toys which contains from a specific type the following data that I
 * Material
 
 <details>
-<summary>Click here for a query I have written to get all dolls</summary>
+<summary>Click here to see a query I have written in SPARQL to get all dolls from the API</summary>
 <br>
 
     PREFIX dc: <http://purl.org/dc/elements/1.1/> 
