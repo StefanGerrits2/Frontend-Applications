@@ -6,7 +6,7 @@
 <style>
     .default-nav-bar {
         margin-bottom: 1em;
-        background-color: #d1d1d1;
+        background-color: white
     }
 	.default-nav-bar ul {
         list-style-type: none;
@@ -14,25 +14,33 @@
         padding: 0;
         display: flex;
         margin-left: -1em;
+        border-bottom: 2px solid #1A2C4C;
     }
     .default-nav-bar ul p {
         color: white;
         text-decoration: none;
-        padding: .5em 1em;
-        background-color: #d1d1d1;
-        color: #000;
+        padding: 1em 1em;
+        background-color: white;
+        color: #1A2C4C;
         margin: 0em;
+        text-transform: uppercase;
+        font-weight: bold;
     }
-    .default-nav-bar ul p:hover {
-        color: #f1f1f1;
-        background-color: #555;
-    }
+   .default-nav-bar ul li p:hover {
+        background-color: #1A2C4C;
+        color: white;
+        transition: .2s all ease-out;
+   }
     @media(max-width: 37rem) {
         .default-nav-bar ul {
             display: block;
+            border-bottom: none;
+        }
+        .default-nav-bar ul p {
+            padding: .5em 1em;
         }
         .default-nav-bar ul * {
-            border-bottom: 1px solid #d1d1d1;
+            border-bottom: 1px solid #1A2C4C;
         }
     }
     .tile-nav__container {
@@ -46,18 +54,19 @@
     .tile-nav__container li {
         width: 20em;
         height: 20em;
-        background-color: #002447;
-        color: white;
+        background-color: white;
+        border: 2px solid #002447;
+        color: #002447;
         margin-right: 2em;
         text-align: center;
         border-radius: 15px;
+        margin-bottom: 2em;
     }
     .tile-nav__container li h1 {
         padding-top: 1em;
     }
-
     .tile-nav-bar li:hover {
-        background-color: rgb(29, 10, 140);
+        background-color: white;
     }
     .cars-img {
         width: 65%;

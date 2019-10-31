@@ -1,5 +1,5 @@
 <script>
-    export let title, image, culture, time, type, origin, size;
+    export let title, image, culture, time, type, origin, size, material;
 </script>
 
 <style>
@@ -45,6 +45,7 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        max-width: 28em;
     }
     .card__content {
         display: flex;
@@ -99,6 +100,7 @@
                 <p>Type: {type}</p>
                 <p>Herkomst: {origin}</p>
                 <p>Grootte: {size}</p>
+                <p>Materiaal: {material}</p>
             </div>
             <button class="btn">Lees meer!</button>
         </div>
