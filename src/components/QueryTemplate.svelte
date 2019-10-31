@@ -87,6 +87,14 @@
         line-height: 1.5;
         margin-bottom: 1.25rem;
     }
+    .uppercase:first-letter {
+        text-transform: uppercase;
+        margin-left: .25em;
+    }
+    .material__container {
+        display: flex;
+    }
+ 
 </style>
 
 <li class="cards__item">
@@ -100,7 +108,7 @@
                 <p>Type: {type}</p>
                 <p>Herkomst: {origin}</p>
                 <p>Grootte: {size}</p>
-                <p>Materiaal: {material}</p>
+                <div class="material__container"><p class="material__title">Materiaal: </p><p class="uppercase">{material}</p></div>
             </div>
             <button class="btn">Lees meer!</button>
         </div>

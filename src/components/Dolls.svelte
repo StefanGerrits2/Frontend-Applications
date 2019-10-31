@@ -1,21 +1,21 @@
 <script>
 	import { onMount } from 'svelte';
 	import QueryTemplate from '../components/QueryTemplate.svelte';
-	let results = [];
 	import { url, query } from '../queries/GetDolls.svelte';
 	import PageTitle from './PageTitle.svelte';
+	let results = [];
 
 	onMount(() => {
-	runQuery(url, query);
-		function runQuery(url, query){
-		// Call the url with the query attached, output data
-		fetch(url+'?query='+ encodeURIComponent(query) +'&format=json')
-			.then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link. 
-			.then(json => {
-				results = json.results.bindings
-				console.log(results)
-			});
-		} 
+		runQuery(url, query);
+			function runQuery(url, query){
+			// Call the url with the query attached, output data
+			fetch(url+'?query='+ encodeURIComponent(query) +'&format=json')
+				.then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link. 
+				.then(json => {
+					results = json.results.bindings
+					console.log(results)
+				});
+		}
 	}) 
 </script>
 

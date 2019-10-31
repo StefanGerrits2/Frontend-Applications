@@ -4,19 +4,14 @@
 
 ## Description
 
-This is an app to visualize data for NMVW wereldculturen. The data I chose to visualize is all the data about toys. They will be able to see which toys they had in the past and how they looked. They will be asked which toys they have right now so they can compare them with the past. On the specific toy page, they can see relates toys which are made of the same material. They will be able to see:
+This is an app to visualize data for NMVW wereldculturen. The data I chose to visualize is all the data about toys. They will be able to see which toys they had in the past and how they looked. They will be asked which toys they have right now so they can compare them with the past. On the specific toy page, they can see relates toys which are made of the same material. 
 
-* The image
-* The title
-* Where it came from
-* Material
+## Features
 
-Optional:
-
-* A description
-* The date
- * A term for a period
- * The date in numbers
+* Selecting a toy category
+* Being able to view all of the toys from that type
+* Routing in navigation to the different category
+* Responsive website
 
 ## Installation
 
@@ -47,14 +42,29 @@ Open your browser and go to:
 
 The data I use is provided by an API. The API contains 700.000 objects. I wrote queries to get the objects that I want. 
 
-I collect all toys which contains the following data that I want:
+I collect all toys which contains from a specific type the following data that I want:
 
 * Title
-* Type
-* Image
-* Location
-* Description
 * Culture
+* Time
+* Type
+* Location
+* Size
+* Material
+
+
+
+## Sources
+
+* [Svelte](https://svelte.dev/) - Documentation about Svelte.
+* [baseScript](https://github.com/cmda-tt/course-19-20/blob/master/examples/sparql/baseScript.js) - To fetch data from API.
+* [Freefrontend](https://freefrontend.com/) - To get ideas for my styling.
+
+## Credits
+
+* [Roy](https://github.com/RooyyDoe) - He helped me a couple times with my code, for example typos in my query or fixing the relative path to a local image. We also deployed our application together.
+
+* [Sarkis](https://github.com/sarkis1997) - He showed me how he imported query files.
 
 ## Check it out!
 
