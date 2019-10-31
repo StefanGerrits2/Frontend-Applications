@@ -37,6 +37,6 @@
         
         FILTER langMatches(lang(?title), "ned")
             
-        } LIMIT 20
+        } LIMIT 50
     `
 </script>

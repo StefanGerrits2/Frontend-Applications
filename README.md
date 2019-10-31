@@ -10,7 +10,7 @@ This is an app to visualize data for NMVW wereldculturen. The data I chose to vi
 
 * Selecting a toy category
 * Being able to view all of the toys from that type
-* Routing in navigation to the different category
+* Routing in navigation to a different toys category
 * Responsive website
 
 ## Installation
@@ -55,7 +55,8 @@ I collect all toys which contains from a specific type the following data that I
 <details>
 <summary>Click here for a query I have written to get all dolls</summary>
 <br>
-``` PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+    PREFIX dc: <http://purl.org/dc/elements/1.1/> 
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     PREFIX dct: <http://purl.org/dc/terms/>
     PREFIX edm: <http://www.europeana.eu/schemas/edm/>
@@ -91,7 +92,7 @@ I collect all toys which contains from a specific type the following data that I
     FILTER langMatches(lang(?title), "ned")
         
     } LIMIT 20
-    ```
+
 </details>
 
 ## Sources
