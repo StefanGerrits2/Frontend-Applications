@@ -45,6 +45,7 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        max-width: 28em;
     }
     .card__content {
         display: flex;
