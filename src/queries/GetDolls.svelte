@@ -1,6 +1,5 @@
   <script context="module">
     export let url = "https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-03/sparql";
-    export let type;
     export const query = `
 		PREFIX dc: <http://purl.org/dc/elements/1.1/>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -17,6 +16,7 @@
             ?cultureLabel
             ?time
             ?size
+            ?materialLabel
 
         WHERE {
         ?obj edm:isRelatedTo <https://hdl.handle.net/20.500.11840/termmaster1832> .
@@ -27,6 +27,8 @@
         ?obj dct:spatial ?origin .
         ?obj dct:extent ?size .
         ?origin skos:prefLabel ?originLabel .
+        ?obj dct:medium ?material .
+        ?material skos:prefLabel ?materialLabel .
         
         OPTIONAL { ?obj dct:created ?time } .
         OPTIONAL { ?obj dc:subject ?culture } .

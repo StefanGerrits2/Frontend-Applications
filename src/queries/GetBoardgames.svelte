@@ -16,6 +16,7 @@
             ?cultureLabel
             ?time
             ?size
+            ?materialLabel
 
         WHERE {
         ?obj edm:isRelatedTo <https://hdl.handle.net/20.500.11840/termmaster1832> .
@@ -26,6 +27,8 @@
         ?obj dct:spatial ?origin .
         ?obj dct:extent ?size .
         ?origin skos:prefLabel ?originLabel .
+        ?obj dct:medium ?material . 
+        ?material skos:prefLabel ?materialLabel .
         
         OPTIONAL { ?obj dct:created ?time } .
         OPTIONAL { ?obj dc:subject ?culture } .

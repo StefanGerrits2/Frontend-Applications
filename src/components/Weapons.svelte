@@ -12,12 +12,11 @@
         fetch(url+'?query='+ encodeURIComponent(query) +'&format=json')
             .then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link. 
             .then(json => {
-            console.log(json);
-            console.table(json.results);
-            results = json.results.bindings
+                results = json.results.bindings
+                console.log(results)
             });
-        } //de JSON sla je op een een var bijvoorbeeld, dan loop je hierovereen (for each budda in buddas)
-	}) //component maken voor img die een link bevat, dan voor elk object in array 
+        } 
+	}) 
 </script>
 
 <style>
@@ -40,7 +39,8 @@
             time={result.time.value}
             origin={result.originLabel.value}
             size={result.size.value}
-            type={result.type.value}>
+            type={result.type.value}
+            material={result.materialLabel.value}>
         </QueryTemplate>
     {/each}
 </ul>
