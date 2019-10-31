@@ -3,6 +3,6 @@
     import PageTitle from '../components/PageTitle.svelte'
 </script>
 
-<PageTitle title="Wat voor speelgoed heb jij thuis?"/>
+<PageTitle isDetailPage={false} title="Wat voor speelgoed heb jij thuis?"/>
 
 <NavMenu isDefault={false}/>

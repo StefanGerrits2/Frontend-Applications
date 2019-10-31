@@ -25,11 +25,11 @@
         text-transform: uppercase;
         font-weight: bold;
     }
-   .default-nav-bar ul li p:hover {
+    .default-nav-bar ul li p:hover {
         background-color: #1A2C4C;
         color: white;
         transition: .2s all ease-out;
-   }
+    }
     @media(max-width: 37rem) {
         .default-nav-bar ul {
             display: block;

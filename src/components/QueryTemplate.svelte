@@ -3,6 +3,7 @@
 </script>
 
 <style>
+    /* I used some CSS code for my cards found here https://codepen.io/mcraiganthony/pen/NxGxqm */
     *,
     *::before,
     *::after { 
@@ -22,6 +23,8 @@
     }
     .btn:hover {
         cursor: pointer;
+        color: white;
+        background-color: darkgrey;
     }
     .cards__item {
         display: flex;

@@ -10,6 +10,7 @@
 	export let url = "";
 </script>
 
+<!-- Setup router -->
 <Router url="{url}">
 	<NavMenu isDefault={true}/>
   	<div>
