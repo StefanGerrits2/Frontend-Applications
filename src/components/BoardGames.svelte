@@ -1,18 +1,18 @@
 <script>
 	import { onMount } from 'svelte';
 	import QueryTemplate from '../components/QueryTemplate.svelte';
-    let results = [];
     import { url, query } from '../queries/GetBoardgames.svelte';
     import PageTitle from './PageTitle.svelte';
+    let results = [];
 
 	onMount(() => {
         runQuery(url, query);
         function runQuery(url, query){
-        fetch(url+'?query='+ encodeURIComponent(query) +'&format=json')
-            .then(res => res.json()) //array van objecten, hier moet overheen gelooped worden voor html, in een loop img create element die je append met een src van een van de objecten met de link. 
+        fetch(url+'?query='+ encodeURIComponent(query) +'&format=json') // Get data from API with my query
+            .then(res => res.json()) // Data is being send back as JSON 
             .then(json => {
-                results = json.results.bindings
-                console.log(results)
+                results = json.results.bindings; // Save all objects in a let
+                console.log(results);
             });
         } 
 	}) 

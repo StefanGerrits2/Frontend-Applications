@@ -94,7 +94,6 @@
     .material__container {
         display: flex;
     }
- 
 </style>
 
 <li class="cards__item">

@@ -14,7 +14,6 @@
         padding: 0;
         display: flex;
         margin-left: -1em;
-        border-bottom: 2px solid #1A2C4C;
     }
     .default-nav-bar ul p {
         color: white;
@@ -55,7 +54,6 @@
         width: 20em;
         height: 20em;
         background-color: white;
-        border: 2px solid #002447;
         color: #002447;
         margin-right: 2em;
         text-align: center;
@@ -66,7 +64,8 @@
         padding-top: 1em;
     }
     .tile-nav-bar li:hover {
-        background-color: white;
+        background-color: #002447;
+        color: white;
     }
     .cars-img {
         width: 65%;
