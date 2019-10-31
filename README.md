@@ -1,16 +1,21 @@
-# The past of toys
+# The Past of Toys
 
 ![home](https://user-images.githubusercontent.com/45566396/67979685-1484a800-fc1d-11e9-932d-c96fbc4388b6.png)
 
 ## Description
 
-This is an app to visualize data for NMVW wereldculturen. The data I chose to visualize is all the data about toys. They will be able to see which toys kids had in the past and how they looked. They will be asked which toys they have right now so they can compare them with the past. 
+This is a web application I made for a school project to visualize data for NMVW wereldculturen. The data I chose to visualize is all the data about toys. There are different toy categories you can see. Each toy will has it's own information which will be shown in a list. I made this application with a javascript framework called Svelte.
+
+##### Target audience:
+
+I made this application for chilrden. This way they can compare the toys from the past with the toys they have right now. I think this will teach them a lot about history in a fun way. They can learn about which materials they used to make toys, which culture it's part of and how toys developed over time in general.
 
 ## Features
 
 * Selecting a toy category
 * Being able to view all of the toys from that type
-* Routing in navigation to a different toys category
+* Routing to different toys categories
+* Dynamically rendering all data from an API
 * Responsive website
 
 ## Installation
@@ -42,7 +47,14 @@ Open your browser and go to:
 
 The data I use is provided by an API. The API contains 700.000 objects. I have written SPARQL queries to get the objects that I want. 
 
-I collect all toys which contains from a specific type the following data that I want:
+I collect all toys from specific categories:
+
+* Dolls
+* Toy animals
+* Board games
+* Toy cars
+
+These categories contain the following data that I get from the API:
 
 * Title
 * Culture
