@@ -1,6 +1,8 @@
 # The Past of Toys
 
 ![home](https://user-images.githubusercontent.com/45566396/67979685-1484a800-fc1d-11e9-932d-c96fbc4388b6.png)
+![arrow](https://user-images.githubusercontent.com/45566396/67988068-3a1aad00-fc2f-11e9-8ce1-7b608036b212.png)
+![Middel 2](https://user-images.githubusercontent.com/45566396/67988560-ab0e9480-fc30-11e9-9d2c-68728e61d803.png)
 
 ## Description
 
@@ -8,7 +10,7 @@ This is a web application I made for a school project to visualize data for NMVW
 
 ##### Target audience:
 
-I made this application for chilrden. This way they can compare the toys from the past with the toys they have right now. I think this will teach them a lot about history in a fun way. They can learn about which materials they used to make toys, which culture it's part of and how toys developed over time in general.
+I made this application for children. This way they can compare the toys from the past with the toys they have right now. This will teach them a lot about history in a fun way. They can learn about which materials they used to make toys, which culture it's part of and how toys developed over time in general.
 
 ## Features
 

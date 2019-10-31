@@ -1,8 +1,7 @@
 {
-  "name": "tech",
+  "name": "svelte-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is an application made with Svelte to show toys which I get from an API",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
