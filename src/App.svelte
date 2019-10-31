@@ -1,11 +1,11 @@
 <!-- App.svelte -->
 <script>
-	import NavMenu from './shared/NavMenu.svelte'
-	import Dolls from './queries/Dolls.svelte'
-	import Cars from './queries/Cars.svelte'
-	import Weapons from './queries/Weapons.svelte'
-	import BoardGames from './queries/BoardGames.svelte'
-	import Home from './shared/Home.svelte'
+	import NavMenu from './components/NavMenu.svelte'
+	import Dolls from './components/Dolls.svelte'
+	import Cars from './components/Cars.svelte'
+	import Weapons from './components/Weapons.svelte'
+	import BoardGames from './components/BoardGames.svelte'
+	import Home from './components/Home.svelte'
 	import { Router, Route } from "svelte-routing";
 	export let url = "";
 </script>
