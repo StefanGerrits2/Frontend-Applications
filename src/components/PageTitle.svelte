@@ -4,8 +4,8 @@
 
 <style>
     h3 {
-        color: #444444;
-        margin-left: .5em;
+        color: #002447;
+        margin-left: .75em;
     }
 </style>
 

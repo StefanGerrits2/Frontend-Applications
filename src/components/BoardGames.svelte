@@ -12,7 +12,6 @@
             .then(res => res.json()) // Data is being send back as JSON 
             .then(json => {
                 results = json.results.bindings; // Save all objects in a let
-                console.log(results);
             });
         } 
 	}) 

@@ -38,7 +38,7 @@
         .default-nav-bar ul p {
             padding: .5em 1em;
         }
-        .default-nav-bar ul * {
+        .default-nav-bar ul li {
             border-bottom: 1px solid #1A2C4C;
         }
     }
@@ -67,21 +67,21 @@
         background-color: #002447;
         color: white;
     }
-    .cars-img {
-        width: 65%;
-        margin-top: 2em;
-    }
     .doll-img {
         width: 40%;
         margin-top: 1em;
     }
-    .weapon-img {
-        width: 55%;
+    .animal-img {
+        width: 65%;
         margin-top: 1.5em;
     }
     .board-game-img {
-        width: 55%;
+        width: 50%;
         margin-top: 1em;
+    }
+    .cars-img {
+        width: 60%;
+        margin-top: 2em;
     }
 </style>
 
@@ -89,15 +89,15 @@
     <ul class={isDefault ? "default-nav__container" : "tile-nav__container"}>
         {#if isDefault}
             <Link to="/"><li><p>Home</p></li></Link>
-            <Link to="/poppen"><li><p>Poppen</p></li></Link>
-            <Link to="/wapens"><li><p>Speelgoedwapens</p></li></Link>
-            <Link to="/bordspellen"><li><p>Bordspellen</p></li></Link>
-            <Link to="/autos"><li><p>Speelgoedauto's</p></li></Link>
+            <Link to="/dolls"><li><p>Poppen</p></li></Link>
+            <Link to="/animals"><li><p>Speelgoeddieren</p></li></Link>
+            <Link to="/board-games"><li><p>Bordspellen</p></li></Link>
+            <Link to="/cars"><li><p>Speelgoedauto's</p></li></Link>
         {:else}
-            <Link to="/poppen"><li><h1>Poppen</h1><img class="doll-img" src="/images/doll.png" alt=""></li></Link>
-            <Link to="/wapens"><li><h1>Speelgoedwapens</h1><img class="weapon-img" src="/images/weapon.png" alt=""></li></Link>
-            <Link to="/bordspellen"><li><h1>Bordspellen</h1><img class="board-game-img" src="/images/board-game.png" alt=""></li></Link>
-            <Link to="/autos"><li><h1>Speelgoedauto's</h1><img class="cars-img" src="/images/car.png" alt=""></li></Link>
+            <Link to="/dolls"><li><h1>Poppen</h1><img class="doll-img" src="/images/doll.png" alt=""></li></Link>
+            <Link to="/animals"><li><h1>Speelgoeddieren</h1><img class="animal-img" src="/images/animal.png" alt=""></li></Link>
+            <Link to="/board-games"><li><h1>Bordspellen</h1><img class="board-game-img" src="/images/board-game.png" alt=""></li></Link>
+            <Link to="/cars"><li><h1>Speelgoedauto's</h1><img class="cars-img" src="/images/car.png" alt=""></li></Link>
         {/if}
     </ul>
 </nav>

@@ -12,7 +12,6 @@
 				.then(res => res.json()) 
 				.then(json => {
 					results = json.results.bindings;
-					console.log(results);
 				});
 		}
 	}) 

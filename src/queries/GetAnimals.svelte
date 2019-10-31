@@ -17,10 +17,11 @@
             ?time
             ?size
             ?materialLabel
+            ?categoryLabel
 
         WHERE {
         ?obj edm:isRelatedTo <https://hdl.handle.net/20.500.11840/termmaster1832> .
-        ?obj edm:object <https://hdl.handle.net/20.500.11840/termmaster12653> .
+        ?obj edm:object <https://hdl.handle.net/20.500.11840/termmaster12665> .
         ?obj dc:title ?title .
         ?obj dc:type ?type .
         ?obj edm:isShownBy ?img .

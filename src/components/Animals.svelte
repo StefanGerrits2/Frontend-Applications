@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import QueryTemplate from '../components/QueryTemplate.svelte';
-    import { url, query } from '../queries/Getweapons.svelte';
+    import { url, query } from '../queries/GetAnimals.svelte';
     import PageTitle from './PageTitle.svelte';
     let results = [];
 
@@ -12,7 +12,6 @@
             .then(res => res.json())
             .then(json => {
                 results = json.results.bindings;
-                console.log(results);
             });
         } 
 	}) 
@@ -28,7 +27,7 @@
     }
 </style>
 
-<PageTitle title="Zo zagen speelgoedwapens er vroeger uit"/>
+<PageTitle title="Zo zagen speelgoeddieren er vroeger uit"/>
 <ul class="cards">
     {#each results as result}
         <QueryTemplate 
