@@ -110,7 +110,9 @@ These categories contain the following data that I get from the API:
     } LIMIT 20
 
 </details>
+
 ###### Further explanation
+
 [Click here](https://github.com/StefanGerrits2/Frontend-Applications/wiki/2.3-Queries-voor-SPARQL) for further explanation.
 
 ## Sources
