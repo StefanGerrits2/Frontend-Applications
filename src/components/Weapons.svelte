@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import QueryTemplate from '../components/QueryTemplate.svelte';
     let results = [];
-    import { url, query } from '../queries/Getweapons.svelte';
+    import { url, query } from '../queries/GetWeapons.svelte';
     import PageTitle from './PageTitle.svelte';
 
 	onMount(() => {
