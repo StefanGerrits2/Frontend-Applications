@@ -6,7 +6,7 @@
     let results = []; // Create array to put in data later
 
     // Source I used for the next code: https://github.com/cmda-tt/course-19-20/blob/master/examples/sparql/baseScript.js
-	onMount(() => {
+	onMount(() => { // Retrieve data while page is being build
         runQuery(url, query);
         function runQuery(url, query){
             fetch(url+'?query='+ encodeURIComponent(query) +'&format=json') // Get data from API with my query
