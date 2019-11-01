@@ -1,8 +1,10 @@
 # The Past of Toys
 
+### Home
 ![home](https://user-images.githubusercontent.com/45566396/67979685-1484a800-fc1d-11e9-932d-c96fbc4388b6.png)
 ![arrow3](https://user-images.githubusercontent.com/45566396/67989134-2f154c00-fc32-11e9-83f2-199084241e5e.png)
-![Middel 2](https://user-images.githubusercontent.com/45566396/67988560-ab0e9480-fc30-11e9-9d2c-68728e61d803.png)
+### Toys list
+![goodimage](https://user-images.githubusercontent.com/45566396/68012433-4e3fc800-fc8a-11e9-955a-75af9f6760a4.png)
 
 ## Description
 
